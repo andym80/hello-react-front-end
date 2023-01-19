@@ -44,4 +44,4 @@ const reducer = (state = greetings, action) => {
 };
 
 export default reducer;
-export { getGreeting, getGreetingsSucces, getGreetingsError,};
+export { getGreeting, getGreetingsSucces, getGreetingsError };
