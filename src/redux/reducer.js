@@ -22,7 +22,7 @@ const getGreetingsError = () => ({
 // Thunk
 
 const getGreeting = () => async (dispatch) => {
-  const response = await axios.get('http://localhost:3001/greetings');
+  const response = await axios.get('http://localhost:3001/api/greetings');
   const greeting = response.data;
   dispatch({
     type: GET_GREETING_SUCCES,

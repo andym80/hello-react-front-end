@@ -10,7 +10,7 @@ function App() {
       <Provider store={store}>
         <Router>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Greeting />} />
           </Routes>
         </Router>
       </Provider>
