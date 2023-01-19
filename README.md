@@ -66,7 +66,7 @@ npm start
 Then you also have to clone and run the server of [hello-rails-back-end](https://github.com//andym80/hello-rails-back-end) repository to get the expect result.
 ```
 
-## Authors
+## Author
 
 👤 **Andy Menutti**
 
