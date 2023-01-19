@@ -1,9 +1,9 @@
-import axios from "axios";
+import axios from 'axios';
 
 // Actions
 
-const GET_GREETING_SUCCES = "GET_GREETING_SUCCES";
-const GET_GREETING_ERROR = "GET_GREETING_ERROR";
+const GET_GREETING_SUCCES = 'GET_GREETING_SUCCES';
+const GET_GREETING_ERROR = 'GET_GREETING_ERROR';
 
 // Action Creators
 
@@ -16,13 +16,13 @@ const getGreetingsSucces = () => ({
 
 const getGreetingsError = () => ({
   type: GET_GREETING_ERROR,
-  payload: "Error",
+  payload: 'Error',
 });
 
 // Thunk
 
 const getGreeting = () => async (dispatch) => {
-  const response = await axios.get("http://localhost:3001/greetings");
+  const response = await axios.get('http://localhost:3001/greetings');
   const greeting = response.data;
   dispatch({
     type: GET_GREETING_SUCCES,
